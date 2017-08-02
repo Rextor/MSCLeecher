@@ -11,7 +11,7 @@ System.Net.Http.Formatting.dll
 And compile it
 # It's free but not support!
 you should write your script of site and add in scripts
-# How to add a Scrypt
+# How to add a Script
 Add class script in script folder
 Add type site in SiteDetecter.TypeSite
 Add Case for Get List Items Method in Core
