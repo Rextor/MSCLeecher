@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -42,8 +42,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\BACKUP NEW WINDOWS10\Visual Studio 2015\Projects\MSC\MSC\bin\Debug\MSC.dll</HintPath>
     </Reference>
-    <Reference Include="NetTelegramBotApi">
-      <HintPath>C:\Users\n-nav\Desktop\CoinUpBot\CoinUpBot\bin\Debug\NetTelegramBotApi.dll</HintPath>
+    <Reference Include="NetTelegramBotApi, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetTelegramBotApi.4.1.0\lib\net45\NetTelegramBotApi.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -73,6 +74,7 @@
     <Compile Include="Additem.Designer.cs">
       <DependentUpon>Additem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Question.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,16 +92,43 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuestionBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuestionBox.Designer.cs">
+      <DependentUpon>QuestionBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Scripts\Accounts.cs" />
     <Compile Include="Scripts\Core.cs" />
+    <Compile Include="Scripts\Films\Aparat.cs" />
+    <Compile Include="Scripts\Films\BaranMovie.cs" />
+    <Compile Include="Scripts\Films\Brazzers.cs" />
+    <Compile Include="Scripts\Films\Filimo.cs" />
+    <Compile Include="Scripts\Films\Imovie-dl.cs" />
+    <Compile Include="Scripts\Films\IranFilm.cs" />
+    <Compile Include="Scripts\Films\Namava.cs" />
+    <Compile Include="Scripts\Films\NightMovie.cs" />
+    <Compile Include="Scripts\Films\Tamasha.cs" />
+    <Compile Include="Scripts\Films\TinyMoviez.cs" />
+    <Compile Include="Scripts\Films\Varzesh3.cs" />
+    <Compile Include="Scripts\Films\Vimeo.cs" />
     <Compile Include="Scripts\Films\Xnxx.cs" />
+    <Compile Include="Scripts\Films\Youtube.cs" />
     <Compile Include="Scripts\Item.cs" />
     <Compile Include="Scripts\SiteDeteacter.cs" />
+    <Compile Include="Scripts\Uploaders\4shared.cs" />
+    <Compile Include="Scripts\Uploaders\CafeBazaar.cs" />
     <Compile Include="Scripts\Uploaders\Dropbox.cs" />
     <Compile Include="Scripts\Uploaders\InstaPhotos.cs" />
+    <Compile Include="Scripts\Uploaders\MediaFire.cs" />
+    <Compile Include="Scripts\Uploaders\Opizo.cs" />
     <Compile Include="Scripts\Uploaders\PicoFile.cs" />
     <Compile Include="Scripts\Uploaders\RGhost.cs" />
+    <Compile Include="Scripts\Uploaders\SendSpace.cs" />
     <Compile Include="Scripts\Uploaders\Unknown.cs" />
+    <Compile Include="Scripts\Uploaders\UploadBoy.cs" />
+    <Compile Include="Scripts\Uploaders\UptoBox.cs" />
+    <Compile Include="Scripts\Uploaders\ZippyShare.cs" />
     <Compile Include="Setting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +160,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QuestionBox.resx">
+      <DependentUpon>QuestionBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Setting.resx">
       <DependentUpon>Setting.cs</DependentUpon>
     </EmbeddedResource>
