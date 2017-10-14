@@ -11,4 +11,9 @@ namespace Leecher.Scripts
         }
 
     }
+    enum Mod
+    {
+        Cookies,
+        Account
+    }
 }
