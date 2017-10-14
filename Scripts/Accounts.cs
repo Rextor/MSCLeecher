@@ -1,10 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MSC.Brute;
 using Leecher.Scripts;
+using System.IO;
 
 namespace Leecher
 {
@@ -20,14 +19,44 @@ namespace Leecher
             }
         }
 
-        public static List<UserAccount> list = new List<UserAccount>()
+        public static void LoadAccounts(string patch)
         {
-            new UserAccount {account=new Account {Username= "Email" ,Password= "Password" }, TypeSite= SiteDetecter.TypeSite.Xnxx },
+            if (!File.Exists(patch))
+                return;
+
+            List<string> lines = File.ReadAllLines(patch).ToList();
+            SiteDetecter.TypeSite[] list = Enum.GetValues(typeof(SiteDetecter.TypeSite)).Cast<SiteDetecter.TypeSite>().ToArray();
+            foreach(string line in lines)
+            {
+                if (string.IsNullOrWhiteSpace(line))
+                    break;
+
+                string[] arr = line.Split(':');
+
+                if (arr.Length != 3)
+                    break;
+
+                foreach(SiteDetecter.TypeSite tup in list)
+                {
+                    string m = arr[2];
+                    if (m.ToLower() == tup.ToString().ToLower())
+                    {
+                        AccountList.Add(new UserAccount { account = new Account { Username = arr[0], Password = arr[1] }, TypeSite = tup });
+                        break;
+                    }
+                }
+            }
+        }
+
+        public static List<UserAccount> AccountList = new List<UserAccount>()
+        {
+
         };
+
         public static Account GetAccount(object type)
         {
             List<Account> lis = new List<Account>();
-            foreach (UserAccount sit in list)
+            foreach (UserAccount sit in AccountList)
             {
                 if ((SiteDetecter.TypeSite)sit.TypeSite == (SiteDetecter.TypeSite)type)
                     lis.Add(sit.account);
