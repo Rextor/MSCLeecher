@@ -36,11 +36,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="HtmlAgilityPack">
-      <HintPath>..\..\..\Zevera Leecher\Zevera Leecher\bin\Debug\HtmlAgilityPack.dll</HintPath>
+      <HintPath>..\bin\Debug\HtmlAgilityPack.dll</HintPath>
     </Reference>
     <Reference Include="MSC, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\BACKUP NEW WINDOWS10\Visual Studio 2015\Projects\MSC\MSC\bin\Debug\MSC.dll</HintPath>
+      <HintPath>..\bin\Debug\MSC.dll</HintPath>
     </Reference>
     <Reference Include="NetTelegramBotApi, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NetTelegramBotApi.4.1.0\lib\net45\NetTelegramBotApi.dll</HintPath>
