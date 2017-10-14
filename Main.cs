@@ -26,7 +26,7 @@ namespace MSC_Leecher
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            Accounts.LoadAccounts(Application.StartupPath + @"\Accounts.txt");
             SiteDetecter.TypeSite[] list = Enum.GetValues(typeof(SiteDetecter.TypeSite)).Cast<SiteDetecter.TypeSite>().ToArray();
             Array.Sort<SiteDetecter.TypeSite>(list);
             foreach (SiteDetecter.TypeSite item in list)
@@ -39,7 +39,7 @@ namespace MSC_Leecher
             foreach (object o in q)
                 listBox1.Items.Add(o);
 
-            foreach (Accounts.UserAccount o in Accounts.list)
+            foreach (Accounts.UserAccount o in Accounts.AccountList)
                 richTextBox2.Text += o.ToString() + "\n";
             tsl.log = new Logger();
             tsl.log.OnMessageReceived += Logger_OnMessageReceived;
