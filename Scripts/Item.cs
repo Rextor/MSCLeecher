@@ -16,4 +16,14 @@ namespace Leecher.Scripts
         Cookies,
         Account
     }
+    enum PageTypes
+    {
+        TVShow,
+        TVShowDownloadPage,
+        Movie,
+        MovieDownloadPage,
+        Series,
+        SeriesDownloadPage,
+        Unkown
+    }
 }
