@@ -18,7 +18,7 @@ namespace Leecher.Scripts
                 {
                     var LeechersList = Enum.GetValues(typeof(TypeSite)).Cast<TypeSite>().ToList();
                     foreach (TypeSite LeechItem in LeechersList)
-                        if (item.ToLower().Contains(LeechItem.ToString().ToLower()))
+                        if (item.ToLower().Contains(LeechItem.ToString().ToLower()) || || LeechItem.ToString().ToLower().Contains(item.ToLower()))
                         {
                             ReturnDef = LeechItem;
                             break;
