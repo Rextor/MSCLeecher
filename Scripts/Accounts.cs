@@ -39,7 +39,7 @@ namespace Leecher
                 foreach(SiteDetecter.TypeSite tup in list)
                 {
                     string m = arr[2];
-                    if (m.ToLower() == tup.ToString().ToLower())
+                    if (m.ToLower() == tup.ToString().ToLower() || tup.ToString().ToLower().Contains(m.ToLower()))
                     {
                         AccountList.Add(new UserAccount { account = new Account { Username = arr[0], Password = arr[1] }, TypeSite = tup });
                         break;
