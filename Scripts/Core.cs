@@ -31,6 +31,9 @@ namespace MSC_Leecher.Scripts
                 case SiteDetecter.TypeSite.RGhost:
                     items = RGhost.GetLinks(url);
                     break;
+                case SiteDetecter.TypeSite._30Nama:
+                    items = _30Nama.GetLinks(url);
+                    break;
             }
             return items;
         }
