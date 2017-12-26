@@ -23,6 +23,7 @@ namespace Leecher.Scripts
                             ReturnDef = LeechItem;
                             break;
                         }
+                    if (ReturnDef != TypeSite.Unknown) break;
                 }
             }
             catch { }
