@@ -100,35 +100,15 @@
     </Compile>
     <Compile Include="Scripts\Accounts.cs" />
     <Compile Include="Scripts\Core.cs" />
-    <Compile Include="Scripts\Films\Aparat.cs" />
-    <Compile Include="Scripts\Films\BaranMovie.cs" />
-    <Compile Include="Scripts\Films\Brazzers.cs" />
-    <Compile Include="Scripts\Films\Filimo.cs" />
-    <Compile Include="Scripts\Films\Imovie-dl.cs" />
-    <Compile Include="Scripts\Films\IranFilm.cs" />
-    <Compile Include="Scripts\Films\Namava.cs" />
-    <Compile Include="Scripts\Films\NightMovie.cs" />
-    <Compile Include="Scripts\Films\Tamasha.cs" />
-    <Compile Include="Scripts\Films\TinyMoviez.cs" />
-    <Compile Include="Scripts\Films\Varzesh3.cs" />
-    <Compile Include="Scripts\Films\Vimeo.cs" />
     <Compile Include="Scripts\Films\Xnxx.cs" />
-    <Compile Include="Scripts\Films\Youtube.cs" />
+    <Compile Include="Scripts\Films\30Nama.cs" />
     <Compile Include="Scripts\Item.cs" />
     <Compile Include="Scripts\SiteDeteacter.cs" />
-    <Compile Include="Scripts\Uploaders\4shared.cs" />
-    <Compile Include="Scripts\Uploaders\CafeBazaar.cs" />
     <Compile Include="Scripts\Uploaders\Dropbox.cs" />
     <Compile Include="Scripts\Uploaders\InstaPhotos.cs" />
-    <Compile Include="Scripts\Uploaders\MediaFire.cs" />
-    <Compile Include="Scripts\Uploaders\Opizo.cs" />
     <Compile Include="Scripts\Uploaders\PicoFile.cs" />
     <Compile Include="Scripts\Uploaders\RGhost.cs" />
-    <Compile Include="Scripts\Uploaders\SendSpace.cs" />
     <Compile Include="Scripts\Uploaders\Unknown.cs" />
-    <Compile Include="Scripts\Uploaders\UploadBoy.cs" />
-    <Compile Include="Scripts\Uploaders\UptoBox.cs" />
-    <Compile Include="Scripts\Uploaders\ZippyShare.cs" />
     <Compile Include="Setting.cs">
       <SubType>Form</SubType>
     </Compile>
